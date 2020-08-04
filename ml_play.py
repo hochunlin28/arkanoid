@@ -96,9 +96,9 @@ class MLPlay:
         """
         # TODO
 
-        if platform_x+20 > predict_x:
+        if platform_x > predict_x:
             return "MOVE_LEFT"
-        elif platform_x+20 < predict_x:
+        elif platform_x+40 < predict_x:
             return "MOVE_RIGHT"
         else:
             return "NONE"
